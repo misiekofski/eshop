@@ -1,4 +1,4 @@
 package shop;
 
-public class Subcategory {
+public class Subcategory extends Category {
 }
