@@ -1,4 +1,8 @@
 package product;
 
-public class Desktop implements Product {
+public class Desktop extends Product {
+
+    public Desktop(int ID) {
+
+    }
 }

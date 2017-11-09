@@ -1,4 +1,4 @@
 package accesory;
 
-public interface Accessory {
+public abstract class Accessory {
 }

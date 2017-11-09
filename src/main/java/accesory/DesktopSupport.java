@@ -1,4 +1,4 @@
 package accesory;
 
-public class DesktopSupport implements Accessory {
+public class DesktopSupport extends Accessory {
 }
