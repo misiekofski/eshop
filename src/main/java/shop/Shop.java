@@ -15,8 +15,13 @@ public class Shop {
         podstawka.setPrice(25.0);
         biurko.addAccessory(podstawka);
 
+        Product error = new Desktop(1);
+
         Basket basket = new Basket();
         basket.add(biurko);
+        basket.add(error);
+        basket.del(error);
+
         System.out.println("Wartość koszyka = " + basket.getTotalNetPrice());
     }
 

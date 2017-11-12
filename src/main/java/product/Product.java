@@ -29,9 +29,11 @@ public abstract class Product {
         this.name = name;
     }
 
-    public Double getPrice() {
-        return this.price;
-    }
+    public Double getPrice() { return this.price; }
+
+    public String getName() { return this.name; }
+
+    public String getColor() { return this.color; }
 
     public Double getPriceBrutto() {
         return this.price*vat;
@@ -43,6 +45,14 @@ public abstract class Product {
 
     public void addAccessory(Accessory accessory) {
         accessories.add(accessory);
+    }
+
+    public Double getTotalAccessoriesPrice() {
+        Double netPrice = 0.0;
+        for (Accessory a : accessories) {
+            netPrice += a.getPrice();
+        }
+        return netPrice;
     }
 
 }

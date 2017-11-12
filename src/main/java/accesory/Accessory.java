@@ -11,4 +11,8 @@ public abstract class Accessory {
     public void setPrice(Double price) {
         this.price = price;
     }
+
+    public Double getPrice() {
+        return price;
+    }
 }
