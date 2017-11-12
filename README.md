@@ -3,8 +3,8 @@ Internet Shop model for Java course
 
 - java/accessory -> Abstract class Accessory + DesktopSupport class for specific accessory
 - java/product -> Abstract class Product + Desktop cllass for specific Product
-- java/shop -> Basket class + Shop class + Category and Subcategory class (dunno why at the moment)
+- java/shop -> Basket class + Shop class (demonstration) + Category and Subcategory class
 
 TODO:
-- category / subcategory
-- sum basket worth with accessories (now calculating just products value)
+- category / subcategory implementation
+- accessories should be working as attribute to specific product
