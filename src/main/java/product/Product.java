@@ -13,6 +13,10 @@ public abstract class Product {
     private Double vat = 0.23;
     protected Collection<Accessory> accessories = new HashSet();
 
+    public Product(int ID) {
+        this.ID=ID;
+    }
+
     public void setColor(String color) {
         this.color = color;
     }

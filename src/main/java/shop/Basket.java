@@ -12,12 +12,12 @@ public class Basket {
         basket.add(product);
     }
 
-    public void getTotalNettoPrice(){
+    public Double getTotalNetPrice(){
         Double netPrice = 0.0;
         for (Product p : basket) {
            netPrice += p.getPrice();
         }
-        System.out.println(netPrice);
+        return netPrice;
     }
 
 }
