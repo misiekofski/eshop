@@ -10,7 +10,8 @@ public abstract class Product {
     protected String name;
     protected String color;
     protected Double price;
-    protected Collection<Accessory> basket = new HashSet();
+    private Double vat = 0.23;
+    protected Collection<Accessory> accessories = new HashSet();
 
     public void setColor(String color) {
         this.color = color;
@@ -24,5 +25,20 @@ public abstract class Product {
         this.name = name;
     }
 
+    public Double getPrice() {
+        return this.price;
+    }
+
+    public Double getPriceBrutto() {
+        return this.price*vat;
+    }
+
+    public String toString(){
+        return "Undefined product";
+    }
+
+    public void addAccessory(Accessory accessory) {
+        accessories.add(accessory);
+    }
 
 }
