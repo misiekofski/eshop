@@ -22,7 +22,9 @@ public class Shop {
         basket.add(error);
         basket.del(error);
 
-        System.out.println("Wartość koszyka = " + basket.getTotalNetPrice());
+        System.out.println("Wartość koszyka netto = " + basket.getTotalNetPrice());
+        System.out.println("Wartość koszyka brutto = " + basket.getTotalPriceWithTax());
+        basket.clearBasket();
     }
 
 }

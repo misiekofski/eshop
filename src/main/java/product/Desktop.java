@@ -6,7 +6,4 @@ public class Desktop extends Product {
         super(ID);
     }
 
-    public Double getPrice(Double price) {
-        return price;
-    }
 }

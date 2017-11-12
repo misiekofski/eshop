@@ -24,7 +24,7 @@ public class Basket {
     }
 
     public Double getTotalPriceWithTax(){
-        return getTotalNetPrice()*vat;
+        return getTotalNetPrice()+getTotalNetPrice()*vat;
     }
 
     public void clearBasket(){
